@@ -34,8 +34,9 @@ Output:
 ]*/
 
 export function makeArrayWithIsHungry(arr) {
-    const result = arr.map(item => item.isHungry = true);
-    return result;
+    const newArray = [isHungry, true];
+    const key = arr.map(item => Object.keys(item));
+    return arr.push(newArray);
 }
 
 /*
@@ -49,9 +50,8 @@ Output:
 ]*/
 
 export function makeShoutingArray(arr) {
-    const result = arr.map(item => item.name)
-    const string = toString(result)
-    console.log(typeof(string))
+    const shout = arr.map(item => ({name: item.name.toUpperCase(), type: item.type}));
+    return shout;
     
 }
 

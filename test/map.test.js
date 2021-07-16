@@ -43,12 +43,13 @@ skip('should return all objects with an added isHungry property equal to true', 
     //Act 
     // Call the function you're testing and set the result to a const
     const actual = makeArrayWithIsHungry(pets);
+    console.log(actual)
     //Expect
     // Make assertions about what is expected versus the actual result
     expect.deepEqual(actual, expected);
 });
 
-skip('should return a shouting array', (expect) => {
+test('should return a shouting array', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = [
@@ -61,7 +62,7 @@ skip('should return a shouting array', (expect) => {
     //Act 
     // Call the function you're testing and set the result to a const
     const actual = makeShoutingArray(pets);
-    
+    console.log(actual)
     //Expect
     // Make assertions about what is expected versus the actual result
     expect.deepEqual(actual, expected);
