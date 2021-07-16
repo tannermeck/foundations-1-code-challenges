@@ -34,9 +34,8 @@ Output:
 ]*/
 
 export function makeArrayWithIsHungry(arr) {
-    const newArray = [isHungry, true];
-    const key = arr.map(item => Object.keys(item));
-    return arr.push(newArray);
+    const newArray = arr.map(item => ({name: item.name, isHungry: true, type: item.type}));
+    return newArray;
 }
 
 /*
