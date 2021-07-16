@@ -50,7 +50,13 @@ Output:
 */
 
 export function makeSpanishLanguageArray(arr) {
+    const makeArray = [];
     arr.forEach(item => {
-        
+        const object = {
+            nombre: item.name,
+            tipo: item.type
+        }
+        makeArray.push(object)
     })
+    return makeArray;
 }

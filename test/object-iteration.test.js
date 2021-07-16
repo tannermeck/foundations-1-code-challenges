@@ -57,7 +57,6 @@ test('should return tuples', (expect) => {
     //Act 
     // Call the function you're testing and set the result to a const
     const actual = makeTuples(pet);
-    console.log(actual)
     //Expect
     // Make assertions about what is expected versus the actual result
     expect.deepEqual(actual, expected);

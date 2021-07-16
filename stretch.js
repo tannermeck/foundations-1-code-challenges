@@ -50,7 +50,8 @@ Output:
 */
 
 export function organizePricesByKey(arr) {
-    return {};
+    const newKey = arr.map(item => item.id)
+    const newValue = arr.map(item => item.price)
 }
 
 /*
