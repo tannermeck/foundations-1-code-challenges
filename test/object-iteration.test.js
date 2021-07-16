@@ -12,7 +12,7 @@ const pet = {
     type: 'puppy',
 };
 
-skip('should return an object with screaming keys', (expect) => {
+test('should return an object with screaming keys', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = {
@@ -24,7 +24,7 @@ skip('should return an object with screaming keys', (expect) => {
     //Act 
     // Call the function you're testing and set the result to a const
     const actual = makeMoreScreamingKeys(pet);
-
+    
     //Expect
     // Make assertions about what is expected versus the actual result
     expect.deepEqual(actual, expected);
@@ -38,14 +38,14 @@ test('should make a string from the keys', (expect) => {
     //Act 
     // Call the function you're testing and set the result to a const
     const actual = makeWeirdStringFromKeys(pet);
-    console.log(actual)
+    
     const shouldBeTrue = actual.includes('name') && actual.includes('age') && actual.includes('type');  
     //Expect
     // Make assertions about what is expected versus the actual result
     expect.deepEqual(true, shouldBeTrue);
 });
 
-skip('should return tuples', (expect) => {
+test('should return tuples', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = [
@@ -57,7 +57,7 @@ skip('should return tuples', (expect) => {
     //Act 
     // Call the function you're testing and set the result to a const
     const actual = makeTuples(pet);
-
+    console.log(actual)
     //Expect
     // Make assertions about what is expected versus the actual result
     expect.deepEqual(actual, expected);
