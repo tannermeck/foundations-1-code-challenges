@@ -81,7 +81,7 @@ test('should return a proper array of strings', (expect) => {
     expect.deepEqual(actual, expected);
 });
 
-skip('should return a proper array of arrays', (expect) => {
+test('should return a proper array of arrays', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = [
@@ -94,7 +94,7 @@ skip('should return a proper array of arrays', (expect) => {
     //Act 
     // Call the function you're testing and set the result to a const
     const actual = makeArrayOfArraysOfArrays(pets);
-    console.log(actual)
+    
     //Expect
     // Make assertions about what is expected versus the actual result
     expect.deepEqual(actual, expected);
