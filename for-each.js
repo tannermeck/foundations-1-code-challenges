@@ -34,7 +34,6 @@ export function makeReversedArrayOfTypes(arr) {
     const makeArray = [];
     arr.forEach(item => {
         makeArray.push(item.type);
-        
     })
     return makeArray.reverse();
 }
@@ -51,6 +50,7 @@ Output:
 */
 
 export function makeSpanishLanguageArray(arr) {
-    return [];
+    arr.forEach(item => {
+        
+    })
 }
-

@@ -1,5 +1,7 @@
 // Use the filter or find array methods to solve these problems
 
+import { makeArrayOfNames } from "./for-each.js";
+
 /* 
 Input:
 [
@@ -53,7 +55,8 @@ Output:
 */
 
 export function getAllDairy(arr) {
-    return [];
+    const result = arr.filter(item => item.category === 'dairy')
+    return result;
 }
 
 /*
@@ -69,7 +72,8 @@ Output:
 */
 
 export function getAllFruitsThatCostMoreThanTwo(arr) {
-    return [];
+    const result = arr.filter(item => item.category === 'fruit' && item.price > 2)
+    return result;
 }
 
 
@@ -84,7 +88,8 @@ Output:
 */
 
 export function findTheCheese(arr) {
-    return [];
+    const result = arr.find(item => item.id === 'cheese');
+    return result;
 }
 
 
@@ -94,5 +99,9 @@ Output:
 */
 
 export function listNamesOfAllFruits(arr) {
-    return [];
+    const makeArray = []
+    arr.filter(item => item.category === 'fruit').forEach(item => {
+        makeArray.push(item.id)
+    })
+    return makeArray;
 }
