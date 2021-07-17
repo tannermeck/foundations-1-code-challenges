@@ -24,7 +24,8 @@ etc
 */
 
 export function makeWeirdStringFromKeys(someObject) {
-    return '';
+    const newObject = Object.keys(someObject)
+    return newObject;
 }
 
 
@@ -38,7 +39,15 @@ Output:
 */
 
 export function makeMoreScreamingKeys(someObject) {
-    return {};
+    const newObject = Object.keys(someObject)
+    const values = Object.values(someObject)
+    const key = newObject.map(item => item.toUpperCase());
+    const object = values.map(item => item)
+    let result = {};
+    for (var i = 0; i < key.length; i++) {
+        result[key[i]] = object[i]
+    }
+    return result;
 }
 
 /*
@@ -51,5 +60,8 @@ Output:
 */
 
 export function makeTuples(someObject) {
-    return [];
+    const keys = Object.keys(someObject)
+    const values = Object.values(someObject)
+   const entries = Object.entries(someObject);
+   return entries;
 }

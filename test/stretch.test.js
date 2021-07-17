@@ -40,7 +40,7 @@ const groceries = [
     },
 ];
 
-skip('should organize prices by key', (expect) => {
+test('should organize prices by key', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = {
@@ -54,7 +54,7 @@ skip('should organize prices by key', (expect) => {
     //Act 
     // Call the function you're testing and set the result to a const
     const actual = organizePricesByKey(groceries);
-
+    
     //Expect
     // Make assertions about what is expected versus the actual result
     expect.deepEqual(actual, expected);

@@ -41,7 +41,7 @@ const groceries = [
     },
 ];
 
-skip('should return all dairy', (expect) => {
+test('should return all dairy', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = [{ 
@@ -68,7 +68,7 @@ skip('should return all dairy', (expect) => {
 });
 
 
-skip('should return all fruits that cost more than 2', (expect) => {
+test('should return all fruits that cost more than 2', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = [{ 
@@ -88,7 +88,7 @@ skip('should return all fruits that cost more than 2', (expect) => {
     expect.deepEqual(actual, expected);
 });
 
-skip('should return the cheese', (expect) => {
+test('should return the cheese', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = { 
@@ -107,7 +107,7 @@ skip('should return the cheese', (expect) => {
     expect.deepEqual(actual, expected);
 });
 
-skip('should list all the fruit names', (expect) => {
+test('should list all the fruit names', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = ['orange', 'kiwi'];
@@ -115,7 +115,7 @@ skip('should list all the fruit names', (expect) => {
     //Act 
     // Call the function you're testing and set the result to a const
     const actual = listNamesOfAllFruits(groceries);
-
+    
     //Expect
     // Make assertions about what is expected versus the actual result
     expect.deepEqual(actual, expected);

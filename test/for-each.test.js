@@ -31,7 +31,7 @@ test('should make an array of names', (expect) => {
     expect.deepEqual(actual, expected);
 });
 
-skip('should make a reverse array of type', (expect) => {
+test('should make a reverse array of type', (expect) => {
     const pets = [
         {
             type: 'cat',
@@ -49,13 +49,12 @@ skip('should make a reverse array of type', (expect) => {
     //Act 
     // Call the function you're testing and set the result to a const
     const actual = makeReversedArrayOfTypes(pets);
-
     //Expect
     // Make assertions about what is expected versus the actual result
     expect.deepEqual(actual, expected);
 });
 
-skip('should make a spanish array of pet objects', (expect) => {
+test('should make a spanish array of pet objects', (expect) => {
     const pets = [
         {
             type: 'cat',
